@@ -1,0 +1,20 @@
+[user]
+	name = kiven
+	email = kiven.mr@gmail.com
+[core]
+	excludesfile = /Users/shenjialong/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+    default = simple
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
