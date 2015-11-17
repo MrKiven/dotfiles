@@ -13,8 +13,10 @@
     default = simple
 [alias]
     st = status
-    ci = commit
+    ci = commit -m
     br = branch
     co = checkout
     df = diff
     lg = log -p
+    ps = push origin HEAD
+    ad = add --all

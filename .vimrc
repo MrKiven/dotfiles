@@ -71,6 +71,8 @@ set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的
 set nobackup
 " 关闭交换文件
 set noswapfile
+" fzf
+set rtp+=~/.fzf
 
 
 "create undo file
@@ -594,10 +596,10 @@ endif
 set background=dark
 set t_Co=256
 " colorscheme solarized
-colorscheme molokai
+" colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
-" colorscheme desert
+colorscheme desert
 
 
 

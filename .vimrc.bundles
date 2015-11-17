@@ -247,7 +247,7 @@ let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
 " ################### 功能相关 ###################
-
+"
 " 文件搜索
 " change to https://github.com/ctrlpvim/ctrlp.vim
 Bundle 'ctrlpvim/ctrlp.vim'
