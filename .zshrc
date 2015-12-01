@@ -82,4 +82,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+. /Users/shenjialong/eleme_work_space/pro/z/z.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
