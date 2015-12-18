@@ -25,6 +25,7 @@ call vundle#rc()
 "     :BundleClean       remove plugin not in list 删除本地无用插件
 Bundle 'gmarik/vundle'
 
+Bundle 'fatih/vim-go'
 
 " jedi-vim
 " Bundle 'davidhalter/jedi-vim'

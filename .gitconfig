@@ -2,6 +2,7 @@
 	name = kiven
 	email = kiven.mr@gmail.com
 [core]
+    editor = vim
 	excludesfile = /Users/shenjialong/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -22,3 +23,4 @@
     ad = add --all
     fh = fetch upstream master
     rb = rebase upstream/master
+    cl = clone
