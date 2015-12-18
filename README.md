@@ -1,6 +1,6 @@
 # My Code Env Config
 
-> tmux  zsh k-vim gitconfig tig fzf z
+> tmux  zsh k-vim gitconfig tig fzf z vagrant...
 >> also fuck, but not use
 
 ## Some Else Waiting...
