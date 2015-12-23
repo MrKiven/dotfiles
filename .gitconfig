@@ -21,6 +21,6 @@
     lg = log -p
     ps = push origin HEAD
     ad = add --all
-    fh = fetch upstream master
-    rb = rebase upstream/master
+    # fh = fetch upstream master
+    # rb = rebase upstream/master
     cl = clone
