@@ -2,8 +2,8 @@
 	name = kiven
 	email = kiven.mr@gmail.com
 [core]
-    editor = vim
-	excludesfile = /Users/shenjialong/.gitignore_global
+        editor = vim
+	excludesfile = /your/path/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
