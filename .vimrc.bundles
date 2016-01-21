@@ -27,6 +27,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'fatih/vim-go'
 
+Bundle 'TimothyYe/vim-tips'
+
 " jedi-vim
 " Bundle 'davidhalter/jedi-vim'
 
@@ -406,7 +408,7 @@ Bundle 'chriskempson/vim-tomorrow-theme'
 " ################### 快速导航 ###################
 "目录导航
 Bundle 'scrooloose/nerdtree'
-map <leader>n :NERDTreeToggle<CR>
+map <TAB> :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
 "close vim if the only window left open is a NERDTree
@@ -417,7 +419,7 @@ let g:NERDTreeMapOpenVSplit = 'v'
 
 
 Bundle 'jistr/vim-nerdtree-tabs'
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+map <TAB> <plug>NERDTreeTabsToggle<CR>
 " 关闭同步
 let g:nerdtree_tabs_synchronize_view=0
 let g:nerdtree_tabs_synchronize_focus=0
