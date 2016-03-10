@@ -1,0 +1,10 @@
+Host github.com
+    user MrKiven
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+
+Host git.coding.net
+    user MrKiven
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
