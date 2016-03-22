@@ -2,11 +2,11 @@
 	name = kiven
 	email = kiven.mr@gmail.com
 [core]
-        editor = vim
+    editor = vim
 	excludesfile = /your/path/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -14,13 +14,18 @@
     default = simple
 [alias]
     st = status
-    ci = commit -m
+    ci = commit
     br = branch
     co = checkout
     df = diff
     lg = log -p
     ps = push origin HEAD
     ad = add --all
-    # fh = fetch upstream master
-    # rb = rebase upstream/master
+    fh = fetch
+    rb = rebase
     cl = clone
+    pr = "!f() { git fetch -fu ${1:-origin} pull/$2/head:pr/$2; }; f"
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+    required = true
