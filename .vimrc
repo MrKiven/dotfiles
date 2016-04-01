@@ -72,7 +72,7 @@ set nobackup
 " 关闭交换文件
 set noswapfile
 " fzf
-set rtp+=~/.fzf
+set rtp+=/usr/local/Cellar/fzf/0.10.0
 
 
 "create undo file
@@ -176,7 +176,7 @@ set foldmethod=indent
 set foldlevel=99
 " 代码折叠自定义快捷键
 let g:FoldMethod = 0
-map <leader>zz :call ToggleFold()<cr>
+map zz :call ToggleFold()<cr>
 fun! ToggleFold()
     if g:FoldMethod == 0
         exe "normal! zM"
@@ -362,8 +362,8 @@ cnoremap <C-e> <End>
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 " 进入搜索Use sane regexes"
-nnoremap / /\v
-vnoremap / /\v
+nnoremap / /
+vnoremap / /
 
 "Keep search pattern at the center of the screen."
 nnoremap <silent> n nzz
