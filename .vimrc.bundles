@@ -404,6 +404,9 @@ let g:molokai_original = 1
 " 主题 tomorrow
 Bundle 'chriskempson/vim-tomorrow-theme'
 
+" 主题 hybrid
+Bundle 'w0ng/vim-hybrid'
+
 
 " ################### 快速导航 ###################
 "目录导航

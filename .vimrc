@@ -1,4 +1,4 @@
-"==========================================
+" ==========================================
 " Author:  wklken
 " Version: 9.0
 " Email: wklken@yeah.net
@@ -601,7 +601,11 @@ set t_Co=256
 " colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
-colorscheme desert
+" colorscheme desert
+colorscheme hybrid
+
+" pylint, line length
+set colorcolumn=79
 
 
 
