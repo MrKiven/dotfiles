@@ -86,6 +86,10 @@ endif
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 " 突出显示当前列
 set cursorcolumn
+"高亮当前行
+set cul
+"合适的高亮当前行的颜色
+hi CursorLine term=none cterm=none ctermbg=3
 set cursorline          " 突出显示当前行
 
 "设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制
@@ -200,6 +204,10 @@ set softtabstop=4 " 按退格键时可以一次删掉 4 个空格
 set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
 set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
 set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
+"显示tab键
+set list
+"list键的填充字符
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
 " A buffer becomes hidden when it is abandoned
 set hidden
@@ -554,8 +562,9 @@ function! AutoSetFileHead()
 
     "如果文件类型为python
     if &filetype == 'python'
-        call setline(1, "\#!/usr/bin/env python")
-        call append(1, "\# -*- coding: utf-8 -*-")
+        call setline(1, "\# -*- coding: utf-8 -*-")
+        " call setline(1, "\#!/usr/bin/env python")
+        " call append(1, "\# -*- coding: utf-8 -*-")
     endif
 
     normal G
@@ -602,10 +611,16 @@ set t_Co=256
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
 " colorscheme desert
-colorscheme hybrid
+" colorscheme hybrid
+colorscheme apprentice
 
 " pylint, line length
 set colorcolumn=79
+" if &filetype == 'python'
+"     set colorcolumn=79
+" endif
+" highlight ColorColumn ctermbg=246
+" highlight ColorColumn guibg=#2d2d2d
 
 
 
