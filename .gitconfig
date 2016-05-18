@@ -3,7 +3,7 @@
 	email = kiven.mr@gmail.com
 [core]
     editor = vim
-	excludesfile = /your/path/.gitignore_global
+	excludesfile = /your/home/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -14,6 +14,7 @@
     default = simple
 [alias]
     st = status
+    stb = status -sb
     ci = commit
     br = branch
     co = checkout
