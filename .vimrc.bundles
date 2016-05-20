@@ -46,6 +46,11 @@ let g:syntastic_go_checkers = []
 
 Bundle 'TimothyYe/vim-tips'
 
+" godef
+Bundle 'dgryski/vim-godef'
+" let g:godef_split=2
+let g:godef_same_file_in_same_window=1
+
 " jedi-vim
 " Bundle 'davidhalter/jedi-vim'
 
