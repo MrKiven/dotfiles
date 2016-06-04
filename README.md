@@ -1,6 +1,6 @@
-# My Code Dotfile..For Mac Or Linux
+# My Code Dotfile.
 
-> tmux  zsh k-vim gitconfig tig fzf z vagrant...
+> tmux zsh k-vim gitconfig tig fzf autojump vagrant... e.g.
 >> also fuck, but not use
 
 ## Some Else Waiting...
