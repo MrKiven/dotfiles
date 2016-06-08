@@ -56,6 +56,23 @@ Plug 'docunext/closetag.vim'
 Plug 'scrooloose/nerdcommenter'
 
 
+" clang
+Plug 'rhysd/vim-clang-format'
+let g:ycm_confirm_extra_conf = 0
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11",
+            \ "BreakBeforeBraces" : "Stroustrup",
+            \ "BasedOnStyle": "google",
+            \ "IndentWidth": 4,
+            \ "DerivePointerAlignment": 'false',
+            \ "PointerAlignment": 'Right'}
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format = 1
+
+
 " 快速加入修改环绕字符
 " for repeat -> enhance surround.vim, . to repeat command
 Plug 'tpope/vim-repeat' | Plug 'tpope/vim-surround'
