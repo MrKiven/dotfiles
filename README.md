@@ -3,4 +3,7 @@
 > tmux zsh k-vim gitconfig tig fzf autojump vagrant... e.g.
 >> also fuck, but not use
 
-## Some Else Waiting...
+# Install
+
+1. clone this repo
+2. make submodule
