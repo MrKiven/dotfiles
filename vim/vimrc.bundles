@@ -70,7 +70,8 @@ let g:clang_format#style_options = {
             \ "DerivePointerAlignment": 'false',
             \ "PointerAlignment": 'Right'}
 let g:clang_format#detect_style_file = 1
-let g:clang_format#auto_format = 1
+autocmd FileType c ClangFormatAutoEnable
+" let g:clang_format#auto_format = 1  " this will auto format js too...
 
 
 " 快速加入修改环绕字符
@@ -235,8 +236,8 @@ endif
 if count(g:bundle_groups, 'javascript')
     " javascript
     " 注意: syntax这个插件要放前面
-    Plug 'othree/yajs.vim' | Plug 'pangloss/vim-javascript'
-    " Plug 'jelera/vim-javascript-syntax' | Plug 'pangloss/vim-javascript'
+    " Plug 'othree/yajs.vim' | Plug 'pangloss/vim-javascript'
+    Plug 'jelera/vim-javascript-syntax' | Plug 'pangloss/vim-javascript'
 
     " TODO: jquery? for, remove or keep
     Plug 'othree/javascript-libraries-syntax.vim'
