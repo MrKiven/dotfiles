@@ -308,8 +308,8 @@ call plug#end()
     " dependence
     " 1. shellcheck `brew install shellcheck` https://github.com/koalaman/shellcheck
 
-    let g:syntastic_error_symbol='>>'
-    let g:syntastic_warning_symbol='>'
+    let g:syntastic_error_symbol='X'
+    let g:syntastic_warning_symbol='!'
     let g:syntastic_check_on_open=1
     let g:syntastic_check_on_wq=0
     let g:syntastic_enable_highlighting=1
@@ -812,6 +812,8 @@ call plug#end()
     let g:html_indent_inctags = "html,body,head,tbody"
     let g:html_indent_script1 = "inc"
     let g:html_indent_style1 = "inc"
+    let g:javascript_ignore_javaScriptdoc = 1
+    let g:javascript_enable_domhtmlcss = 1
 " }}}
 
 " json {{{
