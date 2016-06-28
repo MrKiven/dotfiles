@@ -1,5 +1,5 @@
 github.com:
 - user: MrKiven
   oauth_token: *your oauth_token*
-  protocol: ssh
+  protocol: https
 
