@@ -13,3 +13,10 @@ vim: submodule
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc.bundles ~/.vim.bundles
 	vim -c "PlugInstall"
 	cd ~/.vim/bundle/YouCompleteMe; git checkout master; git submodule update --init --recursive; ./install.py --clang-completer
+
+zsh:
+	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+	chsh -s /usr/local/bin/zsh
+
+hub:
+	brew install hub
