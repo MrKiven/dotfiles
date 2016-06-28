@@ -1,4 +1,5 @@
 alias g='git'
+alias git='hub'
 alias rm='rm -i'
 alias df='df -h'
 alias ..='cd ..'
