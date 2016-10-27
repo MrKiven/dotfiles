@@ -49,8 +49,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(autojump)
+plugins=(git zsh-autosuggestions zsh-256color autojump)
+# plugins=(zsh-autosuggestions)
+# plugins=(zsh-256color)
+# plugins=(autojump)
 
 # User configuration
 
@@ -90,3 +92,9 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`  # Reset text format to the terminal's default
+echo "${green}.zshrc load success! ${reset}"
