@@ -15,6 +15,9 @@ vim: submodule
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc.bundles ~/.vim.bundles
 	ln $(LNSOPT) $(CURDIR)/vim/autoload ~/.vim/autoload
 	vim -c "PlugInstall"
+
+ycm:
+	# this will takes long time
 	cd ~/.vim/bundle/YouCompleteMe; git checkout master; git submodule update --init --recursive; ./install.py --clang-completer
 
 zsh:
