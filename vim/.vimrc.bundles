@@ -29,6 +29,12 @@ call plug#begin('~/.vim/bundle')
 
 " 移动光标到插件名上, 使用'#'快速跳转到每个插件的配置处
 
+" unite.vim
+Plug 'Shougo/unite.vim'
+
+" spelling suggestion
+Plug 'kopischke/unite-spell-suggest'
+
 " syntastic
 Plug 'scrooloose/syntastic'
 
