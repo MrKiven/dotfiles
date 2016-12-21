@@ -15,7 +15,7 @@
 [alias]
     st = status
     stb = status -sb
-    ci = commit
+    ci = commit -S
     br = branch
     co = checkout
     df = diff
@@ -27,8 +27,12 @@
     fh = fetch
     rb = rebase
     cl = clone
-    fhpr = "!f() { git fetch -fu ${1:-origin} pull/$2/head:pr/$2; }; f"
+    fhpr = "!f() { git fetch -fu ${1:-upstream} pull/$2/head:pr/$2; }; f"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
     required = true
+[hub]
+    protocol = ssh
+[url "git@github.com:"]
+    insteadOf = https://github.com/
