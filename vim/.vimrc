@@ -326,10 +326,10 @@ endif
 " 主要按键重定义
 
 " 关闭方向键, 强迫自己用 hjkl
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+" map <Left> <Nop>
+" map <Right> <Nop>
+" map <Up> <Nop>
+" map <Down> <Nop>
 
 "Treat long lines as break lines (useful when moving around in them)
 "se swap之后，同物理行上线直接跳
@@ -610,6 +610,7 @@ if has("autocmd")
   " Highlight TODO, FIXME, NOTE, etc.
   if v:version > 701
     autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
+    " autocmd Syntax * call matchadd('NoteGroup', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
   endif
 endif
@@ -670,11 +671,13 @@ set background=dark
 set t_Co=256
 
 " colorscheme solarized
-" colorscheme molokai
+colorscheme molokai
 " colorscheme desert
-colorscheme hybrid
+" colorscheme hybrid
+" colorscheme default
 " pylint, line length
 set colorcolumn=79
+" hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
 " 设置标记一列的背景颜色和数字一行颜色一致
 hi! link SignColumn   LineNr
