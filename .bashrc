@@ -26,7 +26,8 @@ trash(){
 }
 
 cleartrash(){
-    echo -n "Clear sure?[n]: "
-    read confirm
-    [ $confirm = 'y' ] || [ $confirm = 'Y' ] && /bin/rm -rf ~/.trash/*
+    # echo -n "Clear sure?[n]: "
+    # read confirm
+    # [ $confirm = 'y' ] || [ $confirm = 'Y' ] && /bin/rm -rf ~/.trash/*
+    /bin/rm -rf ~/.trash/*
 }

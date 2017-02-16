@@ -42,6 +42,15 @@ Plug 'scrooloose/syntastic'
 Plug 'dgryski/vim-godef'
 let g:godef_same_file_in_same_window=1
 
+" golang
+Plug 'fatih/vim-go'
+
+" gocode
+" Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '$GOPATH/src/github.com/nsf/gocode/vim/plugged/gocode/vim/symlink.sh' }
+
+" rust
+Plug 'rust-lang/rust.vim'
+
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
 " Snippets are separated from the engine. Add this if you want them:
