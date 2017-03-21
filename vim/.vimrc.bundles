@@ -51,6 +51,10 @@ Plug 'fatih/vim-go'
 " rust
 Plug 'rust-lang/rust.vim'
 
+" dot line
+Plug 'Yggdroot/indentLine'
+let g:indentLine_enabled = 1
+
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
 " Snippets are separated from the engine. Add this if you want them:
