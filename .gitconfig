@@ -34,5 +34,7 @@
     required = true
 [hub]
     protocol = ssh
+
+# comment below when build rust..
 [url "git@github.com:"]
     insteadOf = https://github.com/
