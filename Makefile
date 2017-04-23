@@ -30,4 +30,4 @@ hub:
 
 install_rust:
 	curl -s https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly
-	if [ ! -f ~/.cargo/config ]; then ls $(LNSOPT) $(CURDIR)/cargo/config ~/.cargo/config; fi
+	if [ ! -f ~/.cargo/config ]; then ln $(LNSOPT) $(CURDIR)/cargo/config ~/.cargo/config; fi
