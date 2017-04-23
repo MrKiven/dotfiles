@@ -1,4 +1,4 @@
-LNSOPT=-s
+LNSOPT=-sv
 
 tmux:
 	ln $(LNSOPT) $(CURDIR)/tmux/.tmux.conf ~/.tmux.conf
@@ -9,16 +9,16 @@ submodule:
 vim: submodule
 	cd vim/Vundle.vim; git checkout master; git pull;
 	mkdir -p ~/.vim/bundle/
-	# mv ~/.vimrc ~/.vimrc.back
-	# mv ~/.vimrc.bundles ~/.vimrc.bundles.back
+	ln $(LNSOPT) $(CURDIR)/vim/autoload ~/.vim/autoload
+	if [ -f ~/.vimrc ]; then mv ~/.vimrc ~/.vimrc.back; fi
+	if [ -f ~/.vimrc.bundles ]; then mv ~/.vimrc.bundles ~/.vimrc.bundles.back; fi
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc ~/.vimrc
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc.bundles ~/.vim.bundles
-	ln $(LNSOPT) $(CURDIR)/vim/autoload ~/.vim/autoload
 	vim -c "PlugInstall"
 
 ycm:
 	# this will takes long time
-	cd ~/.vim/bundle/YouCompleteMe; git checkout master; git submodule update --init --recursive; ./install.py --clang-completer
+	cd ~/.vim/bundle/YouCompleteMe; git checkout master; git submodule update --init --recursive; ./install.py --clang-completer --gocode-completer --racer-completer
 
 zsh:
 	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
@@ -26,3 +26,4 @@ zsh:
 
 hub:
 	brew install hub
+	eval "$(hub alias -s)"

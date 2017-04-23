@@ -108,9 +108,9 @@ set cursorline          " 突出显示当前行
 
 
 " 鼠标暂不启用, 键盘党....
-" set mouse-=a
+set mouse-=a
 " 启用鼠标
-set mouse=a
+" set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
