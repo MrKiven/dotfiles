@@ -9,8 +9,8 @@ submodule:
 vim: submodule
 	cd vim/Vundle.vim; git checkout master; git pull;
 	mkdir -p ~/.vim/bundle/
-	mv ~/.vimrc ~/.vimrc.back
-	mv ~/.vimrc.bundles ~/.vimrc.bundles.back
+	# mv ~/.vimrc ~/.vimrc.back
+	# mv ~/.vimrc.bundles ~/.vimrc.bundles.back
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc ~/.vimrc
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc.bundles ~/.vim.bundles
 	ln $(LNSOPT) $(CURDIR)/vim/autoload ~/.vim/autoload

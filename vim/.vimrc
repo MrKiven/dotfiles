@@ -27,6 +27,11 @@
 let mapleader = ','
 let g:mapleader = ','
 
+" 使用系统剪贴板 y或yy 复制后 直接可以使用 command + v 粘贴
+set clipboard=unnamed
+" set clipboard+=unnamedplus
+" set clipboard^=unnamed
+
 " 开启语法高亮
 syntax on
 
@@ -103,9 +108,9 @@ set cursorline          " 突出显示当前行
 
 
 " 鼠标暂不启用, 键盘党....
-set mouse-=a
+" set mouse-=a
 " 启用鼠标
-" set mouse=a
+set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
@@ -671,10 +676,11 @@ set background=dark
 set t_Co=256
 
 " colorscheme solarized
-colorscheme molokai
+" colorscheme molokai
 " colorscheme desert
 " colorscheme hybrid
 " colorscheme default
+colorscheme kolor
 " pylint, line length
 set colorcolumn=79
 " hi ColorColumn ctermbg=lightgrey guibg=lightgrey

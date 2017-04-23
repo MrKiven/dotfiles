@@ -30,7 +30,7 @@ call plug#begin('~/.vim/bundle')
 " 移动光标到插件名上, 使用'#'快速跳转到每个插件的配置处
 
 " unite.vim
-Plug 'Shougo/unite.vim'
+" Plug 'Shougo/unite.vim'
 
 " spelling suggestion
 Plug 'kopischke/unite-spell-suggest'
@@ -58,7 +58,7 @@ let g:indentLine_enabled = 1
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
 " Snippets are separated from the engine. Add this if you want them:
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " auto complete
 " 代码自动补全
@@ -178,6 +178,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
 " 主题 hybrid
 Plug 'w0ng/vim-hybrid'
+
+Plug 'zeis/vim-kolor'
 
 
 " nav
