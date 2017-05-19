@@ -55,6 +55,9 @@ let g:ycm_rust_src_path = '/Users/kiven/projects/rust/src'
 " dot line
 Plug 'Yggdroot/indentLine'
 let g:indentLine_enabled = 1
+let g:indentLine_setColors = 1
+let g:indentLine_color_term = 239
+" let g:indentLine_char = '.'
 
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)

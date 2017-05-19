@@ -28,7 +28,7 @@ let mapleader = ','
 let g:mapleader = ','
 
 " 使用系统剪贴板 y或yy 复制后 直接可以使用 command + v 粘贴
-set clipboard=unnamed
+" set clipboard=unnamed
 " set clipboard+=unnamedplus
 " set clipboard^=unnamed
 
@@ -48,7 +48,6 @@ filetype plugin indent on
 "==========================================
 " General Settings 基础设置
 "==========================================
-
 
 " history存储容量
 set history=2000
