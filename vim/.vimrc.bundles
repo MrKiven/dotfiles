@@ -50,7 +50,7 @@ Plug 'fatih/vim-go'
 
 " rust
 Plug 'rust-lang/rust.vim'
-let g:ycm_rust_src_path = '/Users/kiven/projects/rust/src'
+let g:ycm_rust_src_path = '/Users/kiven/github-projects/rust/src'
 
 " dot line
 Plug 'Yggdroot/indentLine'
